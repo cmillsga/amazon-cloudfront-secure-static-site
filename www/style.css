@@ -1,0 +1,183 @@
+@font-face {
+  font-family: CCUpUpAndAway;
+  src: url(fonts/CCUpUpAndAway.otf);
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+  align: center;
+}
+a {
+  color: lightgrey;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: CCUpUpAndAway;
+  font-kerning: normal;
+  font-weight: normal;
+  color: white;
+}
+h1 {
+  display:none;
+}
+h2 {
+  color: orange;
+}
+
+header {
+  background-image: url("i/header-galaxy-3.png");
+  padding: 40px 10px;
+  text-align: left;
+}
+header h2 {
+  color: white;
+}
+/* header #logo {
+  height: 50%;
+  width: 50%;
+} */
+
+@media only screen and (min-width: 768px) {
+  header #logo {
+    height: 30%;
+    width: 30%;
+  }
+  header h2 {
+    float: right;
+    width: 45%
+  }
+}
+nav {
+  padding: 10px 0;
+  text-align: center;
+}
+nav div#sandwich {
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+nav div#sandwich div {
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  margin: 6px 0 0 20px;
+}
+nav ul {
+  display: none;
+  margin: 0 0 0 50px;
+  padding: 0;
+  text-align: left;
+}
+nav li {
+  display: block;
+  font-family: CCUpUpAndAway;
+  font-weight: normal;
+  padding: 5px;
+  text-transform: uppercase;
+}
+nav li:nth-child(1) a {
+  color: red;
+}
+nav li:nth-child(2) a {
+  color: orange;
+}
+nav li:nth-child(3) a {
+  color: yellow;
+}
+nav li:nth-child(4) a {
+  color: green;
+}
+nav li:nth-child(5) a {
+  color: aqua;
+}
+nav li:nth-child(6) a {
+  color: purple;
+}
+
+@media only screen and (min-width: 768px) {
+  nav ul {
+    display: inline-block;
+    width: 680px;
+  }
+  nav li {
+    display: inline-block;
+  }
+  nav div#sandwich {
+    display: none;
+  }
+}
+main, footer, header #headercontent {
+  margin: 0 auto;
+  max-width: 680px;
+  padding: 0 20px;
+  text-align: center;
+}
+main {
+  text-align: left;
+}
+main img {
+  border: 2px white solid;
+  width: 100%;
+  height: auto;
+  margin: 50px auto;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  main .event img, main .pastevents img {
+    float: right;
+    width: 45%;
+    margin: 0 10px 50px 10px;
+    vertical-align: top;
+  }
+  main .event p {
+  }
+  main .event, main .pastevents {
+    clear: both;
+  }
+}
+main h2, main h3 {
+  clear: both;
+  margin-top: 40px;
+}
+main .event {
+  margin-bottom: 50px;
+}
+main .event h3 {
+  color: aqua;
+}
+main .event .location a {
+  color: lightgrey;
+}
+main .event img {
+  vertical-align: top;
+}
+main .event img:nth-child(even) {
+  float: right;
+}
+main .event img:nth-child(odd) {
+  float: left;
+}
+@media only screen and (min-width: 768px) {
+  main #jamsessions {
+    float: right;
+    margin-top:0;
+    width: 45%
+  }
+  main #jamsessions li {
+    margin-bottom: 5px;
+  }
+}
+main iframe {
+  width: 100%;
+  margin-bottom: 50px;
+}
+footer {
+    background-image: url("i/rainbow-stripe.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 3%;
+    padding-top: 30px;
+    text-align: center;
+}
