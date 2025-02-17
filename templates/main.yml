@@ -1,0 +1,6 @@
+template-file-path: templates/main.yml
+parameters:
+  Domain: test.com
+  HostedZoneId: Z0092147F2LGZ3WIYMMJ
+  SubDomain: test
+tags: {}
